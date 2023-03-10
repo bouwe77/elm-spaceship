@@ -9,6 +9,14 @@
   height: inherit;
 }
 
-/*
-Add more styling here...
-*/
+body {
+  background-color: #242331;
+}
+
+h1 {
+  color: #b88b4a;
+}
+
+h2 {
+  color: #ddca7d;
+}
