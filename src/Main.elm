@@ -5,7 +5,7 @@ import Html exposing (..)
 import Html.Attributes exposing (style)
 import Html.Events exposing (..)
 import Http
-import Json.Decode as D exposing (Decoder)
+import Json.Decode as Decode exposing (Decoder)
 
 
 
@@ -113,5 +113,5 @@ getSpaceship =
 
 spaceshipDecoder : Decoder Spaceship
 spaceshipDecoder =
-  D.map Spaceship
-    (D.field "name" D.string)
+  Decode.map Spaceship
+    (Decode.field "name" Decode.string)
